@@ -1,0 +1,14 @@
+.bg-height {
+  height: 100vh;
+}
+
+.header{
+  padding-top: 25px;
+}
+
+.flex-button{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
