@@ -2,11 +2,15 @@
   height: 100vh;
 }
 
-.header{
+.header {
   padding-top: 25px;
 }
 
-.flex-button{
+.text-area {
+  height: 300px;
+}
+
+.flex-button {
   margin-top: 25px;
   display: flex;
   justify-content: space-around;

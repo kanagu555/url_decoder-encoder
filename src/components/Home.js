@@ -30,27 +30,27 @@ const Home = () => {
       <div className="form floating">
         <textarea
           ref={inputURL}
-          className="form-control border-5 "
+          className="form-control border-5 text-area"
           placeholder="Enter any URL/ Text"
-          style={{ height: 150 }}
+          
         />
       </div>
       <i className="bi-alaram" />
       <div className="flex-button">
-        <button className="btn btn-primary" onClick={onDecode}>
+        <button className="btn btn-primary btn-lg" onClick={onDecode}>
           <i className="bi bi-shuffle" />
           Decode
         </button>
-        <button className="btn btn-primary" onClick={onEncode}>
+        <button className="btn btn-primary btn-lg" onClick={onEncode}>
           <i className="bi bi-shuffle" />
           Encode
         </button>
-        <button className="btn btn-danger" onClick={onClear}>
+        <button className="btn btn-danger btn-lg" onClick={onClear}>
           <i className="bi bi-x-circle" />
           Clear
         </button>
 
-        <button className="btn btn-success" onClick={onCopy}>
+        <button className="btn btn-success btn-lg" onClick={onCopy}>
           <i className="bi bi-bookmark-check" />
           Copy
         </button>
