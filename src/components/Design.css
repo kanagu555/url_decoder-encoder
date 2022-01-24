@@ -2,6 +2,12 @@
   height: 100vh;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .header {
   padding-top: 25px;
 }
@@ -16,3 +22,21 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+.footer-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: royalblue;
+  color: whitesmoke;
+  height: 40px;
+  font-weight: bold;
+}
+
+.app-alignment{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
