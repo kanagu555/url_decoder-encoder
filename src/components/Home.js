@@ -26,35 +26,33 @@ const Home = () => {
 
   return (
     <div className="container">
-      <div>
-        <h1 className="text-white header">URL Decoder & Encoder</h1>
-        <div className="form floating">
-          <textarea
-            ref={inputURL}
-            className="form-control border-5 text-area"
-            placeholder="Enter any URL/ Text"
-          />
-        </div>
-        <i className="bi-alaram" />
-        <div className="flex-button">
-          <button className="btn btn-primary btn-lg" onClick={onDecode}>
-            <i className="bi bi-shuffle" />
-            Decode
-          </button>
-          <button className="btn btn-primary btn-lg" onClick={onEncode}>
-            <i className="bi bi-shuffle" />
-            Encode
-          </button>
-          <button className="btn btn-danger btn-lg" onClick={onClear}>
-            <i className="bi bi-x-circle" />
-            Clear
-          </button>
+      <h1 className="text-white header">URL Decoder & Encoder</h1>
+      <div className="form floating">
+        <textarea
+          ref={inputURL}
+          className="form-control border-5 text-area"
+          placeholder="Enter any URL/ Text"
+        />
+      </div>
+      <i className="bi-alaram" />
+      <div className="flex-button">
+        <button className="btn btn-primary btn-lg" onClick={onDecode}>
+          <i className="bi bi-shuffle" />
+          Decode
+        </button>
+        <button className="btn btn-primary btn-lg" onClick={onEncode}>
+          <i className="bi bi-shuffle" />
+          Encode
+        </button>
+        <button className="btn btn-danger btn-lg" onClick={onClear}>
+          <i className="bi bi-x-circle" />
+          Clear
+        </button>
 
-          <button className="btn btn-success btn-lg" onClick={onCopy}>
-            <i className="bi bi-bookmark-check" />
-            Copy
-          </button>
-        </div>
+        <button className="btn btn-success btn-lg" onClick={onCopy}>
+          <i className="bi bi-bookmark-check" />
+          Copy
+        </button>
       </div>
     </div>
   );
