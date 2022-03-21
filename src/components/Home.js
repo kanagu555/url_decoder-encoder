@@ -37,15 +37,15 @@ const Home = () => {
       <i className="bi-alaram" />
       <div className="flex-button">
         <button className="btn btn-primary btn-lg" onClick={onDecode}>
-          <i className="bi bi-shuffle" />
+          <i className="bi bi-unlock" />
           Decode
         </button>
         <button className="btn btn-primary btn-lg" onClick={onEncode}>
-          <i className="bi bi-shuffle" />
+          <i className="bi bi-lock" />
           Encode
         </button>
         <button className="btn btn-danger btn-lg" onClick={onClear}>
-          <i className="bi bi-x-circle" />
+          <i className="bi bi-x-lg" />
           Clear
         </button>
 
