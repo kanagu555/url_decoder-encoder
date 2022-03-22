@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 import "./Design.css";
 
 const Home = () => {
@@ -18,14 +20,17 @@ const Home = () => {
 
   const onClear = () => {
     inputURL.current.value = "";
+    toast.warn("Text Box Cleared.");
   };
 
   const onCopy = () => {
     navigator.clipboard.writeText(inputURL.current.value);
+    toast.success("Text Copied.");
   };
 
   return (
     <div className="container">
+      <ToastContainer theme="colored" draggable={true} autoClose={2000}/>
       <h1 className="text-white header">URL Decoder & Encoder</h1>
       <div className="form floating">
         <textarea
